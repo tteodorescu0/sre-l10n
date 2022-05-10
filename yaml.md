@@ -4,17 +4,17 @@ Localisation of SRE consists effectively of four separate steps:
 
   * Localisation of unicode characters, functions and units
   * Algorithm to generate word numbers
-  * Translation of messages for navigation, 
+  * Translation of messages for navigation 
   * Localisation of speech rule sets that recursively construct descriptions of
     mathematical expressions
 
-Below is a an explanation of the actual speech rule sets that need localising as
+Below is an explanation of the actual speech rule sets that need localising as
 well as a description of the Yaml format of SRE speech rules.
 
 
 ## Speech Rule Sets
 
-SRE gnerally uses four rule sets for translation of mathematical expressions
+SRE generally uses four rule sets for translation of mathematical expressions
 into speech. Note, that there exist a couple of extra rule sets for English,
 which are generally not localised.
 
@@ -161,7 +161,7 @@ fraction:
 This would now lead to the speech output of 
 
 ``` yaml
-fraction with denominator c and enumerator a plus b
+fraction with denominator c and numerator a plus b
 ```
 
 Note that some of the lines contain annotations. While they are desribed in more
@@ -284,7 +284,7 @@ for instance.  Pauses generally can have numerical values in milliseconds or
 relative pauses in terms of `short, medium, long`. Pauses are accumulative and
 the given value is the minimal pause that will be used. That is, even if a pause
 is defined as small, it can be longer in case the preceding expression requires
-this. In case it is defined as medium or long than the pause will be at least
+this. In case it is defined as medium or long, the pause will be at least
 medium or long no matter how small the preceding expression is.
 
 
