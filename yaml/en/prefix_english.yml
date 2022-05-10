@@ -55,35 +55,35 @@ index:
   - $1: "Index" (pause:200)
 
 # Left subscript or index of a tensor-like structure
-# Example: Left subscript a
+# Example: Left subscript b
 # LaTeX Example: $\tensor{M}{^a_b^c_d}$
 leftsub:
   - $1: "Left Subscript" (pause:200)
 
 # Counted left subscript or index of a tensor-like structure
 # Example: 2nd left subscript e
-# LaTeX Example: $\tensor{M}{^{ae}_b^c_d}$
+# LaTeX Example: $\tensor{M}{^a_{be}^c_d}$
 # %1: The index counter
 leftsub-counted:
   - %1
   - $1: "Left Subscript" (pause:200)
 
 # Left superscript or index of a tensor-like structure
-# Example: Left superscript b
+# Example: Left superscript a
 # LaTeX Example: $\tensor{M}{^a_b^c_d}$
 leftsuper:
   - $1: "Left Superscript" (pause:200)
 
 # Counted left superscript or index of a tensor-like structure
 # Example: 2nd left superscript e
-# LaTeX Example: $\tensor{M}{^a_{be}^c_d}$
+# LaTeX Example: $\tensor{M}{^{ae}_b^c_d}$
 # %1: The index counter
 leftsuper-counted:
   - %1
   - $1: "Left Superscript" (pause:200)
 
 # Right subscript or index of a tensor-like structure
-# Example: Right subscript c
+# Example: Right subscript d
 # LaTeX Example: $\tensor{M}{^a_b^c_d}$
 rightsub:
   - $1: "Right Subscript" (pause:200)
@@ -97,7 +97,7 @@ rightsub-counted:
   - $1: "Right Subscript" (pause:200)
 
 # Right superscript or exponent of a tensor-like structure
-# Example: Right superscript d
+# Example: Right superscript c
 # LaTeX Example: $\tensor{M}{^a_b^c_d}$
 rightsuper:
   - $1: "Right Superscript" (pause:200)
